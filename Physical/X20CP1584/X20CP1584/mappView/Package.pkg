@@ -6,7 +6,8 @@
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="Package">VisualizationControl</Object>
     <Object Type="Package">Simulation</Object>
-    <Object Type="File">ContentMainPageVisControl.eventbinding</Object>
     <Object Type="File">ContentTop.eventbinding</Object>
+    <Object Type="File">LoginArea.eventbinding</Object>
+    <Object Type="File">InfoArea.binding</Object>
   </Objects>
 </Package>

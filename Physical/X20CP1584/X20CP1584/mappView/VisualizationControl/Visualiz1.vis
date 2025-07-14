@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="control" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="MainPageVisControl" />
+  <StartPage pageRefId="LandingControlPage" />
   <Pages>
-    <Page refId="MainPageVisControl" />
+    <Page refId="LandingControlPage" />
+    <Page refId="InfoControlPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="InfoArea_binding" />
+  </BindingsSets>
   <EventBindingsSets>
-    <EventBindingsSet refId="ContentMainPageVisControl_eventbinding" />
+    <EventBindingsSet refId="LoginArea_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
@@ -15,6 +18,8 @@
   </Dialogs>
   <Contents>
     <Content refId="LoginArea" />
+    <Content refId="MainArea" />
+    <Content refId="InfoArea" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

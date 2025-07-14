@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="ContentMainPageVisControl" height="900" width="1100" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets>
-    <Widget xsi:type="widgets.brease.ToggleButton" id="START" top="300" left="220" zIndex="0" text="ToggleButton1" />
-    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="400" left="100" zIndex="1" />
-  </Widgets>
-</Content>

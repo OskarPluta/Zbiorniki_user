@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InfoArea" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="80" left="260" width="660" height="260" zIndex="0" text="Poziomy Zbiorników">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_1" top="3" left="-1" width="221" height="221" zIndex="0" maxValue="10000" text="Zbiornik 1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_2" top="3" left="219" width="221" height="221" zIndex="1" maxValue="10000" text="Zbiornik 2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_3" top="3" left="439" width="217" height="217" zIndex="2" maxValue="10000" showUnit="true" text="Zbiornik 3" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>
