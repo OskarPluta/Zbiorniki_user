@@ -1,36 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<OpcUaSource FileVersion="3">
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="J4.93">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
+    <EngineeringUnitAliases />
+  </Aliases>
   <DefaultView>
-    <Module>
-      <GlobalVariables Name="Global PV">
-        <Variable Name="gMieszadlo" Enable="True" />
-        <Variable Name="gZb1_poziom" Enable="True" />
-        <Variable Name="gZb1_zawor" Enable="True" />
-        <Variable Name="gZb2_poziom" Enable="True" />
-        <Variable Name="gZb2_zawor" Enable="True" />
-        <Variable Name="gZb3_poziom" Enable="True" />
-        <Variable Name="gZb3_zawor_glowny" Enable="True" />
-        <Variable Name="gZb3_zawor_lewy" Enable="True">
-          <Property BrowseName="0:EURange">
-            <Value>
-              <Low ValueProvider="Const">0</Low>
-              <High ValueProvider="Const">100</High>
-            </Value>
-          </Property>
-        </Variable>
-        <Variable Name="gZb3_zawor_prawy" Enable="True">
-          <Property BrowseName="0:EURange">
-            <Value>
-              <Low ValueProvider="Const">0</Low>
-              <High ValueProvider="Const">100</High>
-            </Value>
-          </Property>
-        </Variable>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables>
+        <Variable Name="gMieszadlo" />
+        <Variable Name="gZb1_poziom" />
+        <Variable Name="gZb1_zawor" />
+        <Variable Name="gZb2_poziom" />
+        <Variable Name="gZb2_zawor" />
+        <Variable Name="gZb3_poziom" />
+        <Variable Name="gZb3_zawor_glowny" />
+        <Variable Name="gZb3_zawor_lewy" EURangesId="1" />
+        <Variable Name="gZb3_zawor_prawy" EURangesId="1" />
+        <Variable Name="START" />
+        <Variable Name="STOP" />
       </GlobalVariables>
-      <Task Name="ClockSigna" Enable="True">
-        <Variable Name="Clock" Enable="True" />
-        <Variable Name="Mixer" Enable="True" />
+      <Task Name="ClockSigna">
+        <Variable Name="Clock" />
+        <Variable Name="Mixer" />
       </Task>
+      <Task Name="Tanks" />
+      <Task Name="Recipies" />
     </Module>
   </DefaultView>
 </OpcUaSource>

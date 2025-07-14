@@ -1,8 +1,7 @@
 VAR
-	Start : BOOL;
 	krok : USINT;
-	stop : BOOL;
 	Mieszanie: BOOL;
 	timer_mieszania : TON;
 	czas_mieszania : TIME := T#5s;
+	aktywny : BOOL;
 END_VAR
