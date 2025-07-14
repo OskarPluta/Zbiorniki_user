@@ -1,0 +1,12 @@
+(*Zmienne które sa uzywane przez symulacje. Nalezy je przypisac do zmiennych w programie sterujacym*)
+VAR
+	gZb1_poziom : INT; (*Poziom cieczy w zbiorniku 1*)
+	gZb2_poziom : INT; (*Poziom cieczy w zbiorniku 2*)
+	gZb3_poziom : INT; (*Poziom cieczy w zbiorniku 3*)
+	gZb1_zawor : BOOL; (*0 - zawor zamkniety, 1 - zawor otwarty*)
+	gZb2_zawor : BOOL; (*0 - zawor zamkniety, 1 - zawor otwarty*)
+	gZb3_zawor_lewy : INT; (*% otwarcia zaworu lewego (0-100)*)
+	gZb3_zawor_prawy : INT; (*% otwarcia zaworu prawego (0-100)*)
+	gZb3_zawor_glowny : BOOL; (*0 - zawor zamkniety, 1 - zawor otwarty*)
+	gMieszadlo : BOOL; (*0 - mieszadlo wylaczone, 1- mieszadlo wlaczone*)
+END_VAR

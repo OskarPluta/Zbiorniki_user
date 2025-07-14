@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTypeSet id="expressiontypeSet1" xmlns="http://www.br-automation.com/iat2016/expressionType/v1">
+	<ExpressionTypes>		
+
+		<ExpressionType name="Negation" datatype="BOOL">
+			<Operands>
+				<Operand name="BoolVariable" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				NOT BoolVariable
+			</Operation>
+		</ExpressionType>
+
+		<ExpressionType name="Zb12_przeplyw" datatype="BOOL">
+			<Operands>
+				<Operand name="Zb_zawor" datatype="ANY_INT" />
+				<Operand name="Zb_poziom" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_zawor>0 AND Zb_poziom &gt; 0
+			</Operation>
+		</ExpressionType>
+
+		<ExpressionType name="Zb3_zawor" datatype="BOOL">
+			<Operands>
+				<Operand name="Zb_zawor" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_zawor >0 
+			</Operation>
+		</ExpressionType>
+
+		<ExpressionType name="Zb3_przep" datatype="BOOL">
+			<Operands>
+				<Operand name="Zb_zawor" datatype="BOOL" />
+				<Operand name="Zb_poziom" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_zawor AND Zb_poziom &gt; 0
+			</Operation>
+		</ExpressionType>
+
+		<!-- Tank 1 2 Level value rising -->
+		<ExpressionType name="Zb12_rising" datatype="BOOL">
+			<Operands>
+				<Operand name="Clock" datatype="BOOL" />
+				<Operand name="Zb_Zawor" datatype="BOOL" />
+				<Operand name="Zb_Poziom" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_Zawor AND Clock AND Zb_Poziom &lt; 10000
+			</Operation>
+		</ExpressionType>
+
+		<!-- Tank 3 Level value droping -->
+		<ExpressionType name="Zb12_droping_boolean" datatype="BOOL">
+			<Operands>
+				<Operand name="Clock" datatype="BOOL" />
+				<Operand name="Zb_Zawor" datatype="ANY_INT" />
+				<Operand name="Zawory_Dwustanowe" datatype="BOOL" />
+				<Operand name="Zb12_Poziom" datatype="ANY_INT" />
+				<Operand name="Zb3_Poziom" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_Zawor &gt; 0 AND Clock AND Zb3_Poziom &lt; 10000 AND Zb12_Poziom &gt; 0 
+			</Operation>
+		</ExpressionType>
+
+		<!-- Tank 3 Level value droping -->
+		<ExpressionType name="Zb3_Droping" datatype="BOOL">
+			<Operands>
+				<Operand name="Clock" datatype="BOOL" />
+				<Operand name="Zb_Zawor" datatype="BOOL" />
+				<Operand name="Zb_Poziom" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_Zawor AND Clock AND Zb_Poziom &gt; 0
+			</Operation>
+		</ExpressionType>
+
+		<!-- Mixer Blinking -->
+		<ExpressionType name="Mixer_Blinking" datatype="BOOL">
+			<Operands>
+				<Operand name="Clock" datatype="BOOL" />
+				<Operand name="Mixer" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				Clock AND Mixer
+			</Operation>
+		</ExpressionType>
+		
+		
+		<ExpressionType name="Zb12Change" datatype="ANY_INT">
+			<Operands>
+				<Operand name="Zb_increase" datatype="ANY_INT" />
+				<Operand name="Zb_decrease" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb_increase-Zb_decrease
+			</Operation>
+		</ExpressionType>
+		
+		<ExpressionType name="Zb3Change" datatype="ANY_INT">
+			<Operands>
+				<Operand name="Zb1_decrease" datatype="ANY_INT" />
+				<Operand name="Zb2_decrease" datatype="ANY_INT" />
+				<Operand name="Zb3_decrease" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb1_decrease+Zb2_decrease-Zb3_decrease
+			</Operation>
+		</ExpressionType>
+		
+		<ExpressionType name="Zb12Decrease" datatype="ANY_INT">
+			<Operands>
+				<Operand name="Zb1_decrease" datatype="ANY_INT" />
+				<Operand name="Zb2_decrease" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				Zb1_decrease+Zb2_decrease
+			</Operation>
+		</ExpressionType>
+
+	</ExpressionTypes>
+</ExpressionTypeSet>

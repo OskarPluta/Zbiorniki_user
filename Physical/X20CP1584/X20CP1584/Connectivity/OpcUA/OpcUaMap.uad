@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="3">
+  <DefaultView>
+    <Module>
+      <GlobalVariables Name="Global PV">
+        <Variable Name="gMieszadlo" Enable="True" />
+        <Variable Name="gZb1_poziom" Enable="True" />
+        <Variable Name="gZb1_zawor" Enable="True" />
+        <Variable Name="gZb2_poziom" Enable="True" />
+        <Variable Name="gZb2_zawor" Enable="True" />
+        <Variable Name="gZb3_poziom" Enable="True" />
+        <Variable Name="gZb3_zawor_glowny" Enable="True" />
+        <Variable Name="gZb3_zawor_lewy" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">100</High>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="gZb3_zawor_prawy" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">100</High>
+            </Value>
+          </Property>
+        </Variable>
+      </GlobalVariables>
+      <Task Name="ClockSigna" Enable="True">
+        <Variable Name="Clock" Enable="True" />
+        <Variable Name="Mixer" Enable="True" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

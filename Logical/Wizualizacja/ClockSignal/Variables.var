@@ -1,0 +1,8 @@
+VAR
+	Clock : BOOL;
+	ClockStatus : USINT;
+	Mixer : BOOL;
+	MixerStatus : USINT;
+	TON_1 : TON;
+	TON_0 : TON;
+END_VAR

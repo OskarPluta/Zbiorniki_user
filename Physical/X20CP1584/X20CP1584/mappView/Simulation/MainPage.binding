@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainPageBindings" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb2_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2" attribute="value" />	
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ProgressBarTank3" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Inside" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Inside" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zawory_dwustanowe" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="RadioButtonBooleanValves" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zawory_analogowe" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="RadioButtonAnalogValves" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericOutputTank2Level" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericOutputTank1Level" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericOutputTank3Level" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb1_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line66" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb2_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line72" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb2_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line71" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Zb2_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle10" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line65" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle8" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButtonValveTank1" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButtonValveTank2" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Mieszadlo" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButtonMixer" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButtonValve3" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_przeplyw" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="PrgBarTank3Left" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_zawor_Negative" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line48" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb2_zawor_Negative" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line22" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb1_zawor_Negative" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line23" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle4" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line51" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line52" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle3" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line49" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_zawor" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line50" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_przeplyw" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="PrgBarTank3Right" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Mieszadlo" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="LabelMixerGreen" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle6" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line59" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Line60" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Mixer_Visible" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MixerAxis" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Mixer_Visible" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MixerBottom" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Mixer_Visible" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MixerMiddle" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Mixer_Visible" attribute="result" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MixerFrame" attribute="visible" />
+		</Binding>
+	</Bindings>
+</BindingsSet>
+

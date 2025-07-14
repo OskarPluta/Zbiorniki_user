@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ExpressionBinding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>		
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_lewy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_lewy_przeplyw" attribute="Zb_zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_lewy_przeplyw" attribute="Zb_poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_prawy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_prawy_przeplyw" attribute="Zb_zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_prawy_przeplyw" attribute="Zb_poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_przeplyw" attribute="Zb_zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_przeplyw" attribute="Zb_poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_zawor" attribute="result" />
+			<Target xsi:type="expression" refId="Zb1_zawor_Negative" attribute="BoolVariable" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_zawor" attribute="result" />
+			<Target xsi:type="expression" refId="Zb2_zawor_Negative" attribute="BoolVariable" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_zawor_Negative" attribute="BoolVariable" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_lewy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_lewy_zawor" attribute="Zb_zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_prawy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_prawy_zawor" attribute="Zb_zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_prawy_przeplyw" attribute="result" />
+			<Target xsi:type="session" refId="Zb3_prawy_przeplyw_expression_result" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_lewy_przeplyw" attribute="result" />
+			<Target xsi:type="session" refId="Zb3_lewy_przeplyw_expression_result" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_przeplyw" attribute="result" />
+			<Target xsi:type="session" refId="Zb3_przeplyw_expression_result" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_rising" attribute="Clock" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_zawor" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_rising" attribute="Zb_Zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_rising" attribute="Zb_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb1_rising" attribute="result" />
+			<Target xsi:type="session" refId="Zb1_rising_expression_result" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_rising" attribute="Clock" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_zawor" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_rising" attribute="Zb_Zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_rising" attribute="Zb_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb2_rising" attribute="result" />
+			<Target xsi:type="session" refId="Zb2_rising_expression_result" attribute="value" />
+		</Binding>
+
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_droping" attribute="Clock" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_lewy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_droping" attribute="Zb_Zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zawory_dwustanowe" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_droping" attribute="Zawory_Dwustanowe" />
+		</Binding>		
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_droping" attribute="Zb12_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_droping" attribute="Zb3_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb1_droping" attribute="result" />
+			<Target xsi:type="session" refId="Zb1_droping_expression_result" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_droping" attribute="Clock" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor_prawy" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_droping" attribute="Zb_Zawor" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zawory_dwustanowe" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_droping" attribute="Zawory_Dwustanowe" />
+		</Binding>		
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_droping" attribute="Zb12_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_droping" attribute="Zb3_Poziom" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb2_droping" attribute="result" />
+			<Target xsi:type="session" refId="Zb2_droping_expression_result" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_droping" attribute="Clock" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_zawor" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_droping" attribute="Zb_Zawor" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_poziom" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_droping" attribute="Zb_Poziom" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_droping" attribute="result" />
+			<Target xsi:type="session" refId="Zb3_droping_expression_result" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="MixerClockSignal" attribute="value" />
+			<Target xsi:type="expression" refId="Mixer_Visible" attribute="Clock" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Mieszadlo" attribute="value" />
+			<Target xsi:type="expression" refId="Mixer_Visible" attribute="Mixer" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_increase" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_change" attribute="Zb_increase" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb1_change" attribute="Zb_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb1_change" attribute="result" />
+			<Target xsi:type="session" refId="Zb1_change" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_increase" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_change" attribute="Zb_increase" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb2_change" attribute="Zb_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb2_change" attribute="result" />
+			<Target xsi:type="session" refId="Zb2_change" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_change" attribute="Zb1_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_change" attribute="Zb2_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb3_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb3_change" attribute="Zb3_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb3_change" attribute="result" />
+			<Target xsi:type="session" refId="Zb3_change" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb1_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb12_decrease" attribute="Zb1_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="Zb2_decrease" attribute="value" />
+			<Target xsi:type="expression" refId="Zb12_decrease" attribute="Zb2_decrease" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="Zb12_decrease" attribute="result" />
+			<Target xsi:type="session" refId="Zb12Decrease" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

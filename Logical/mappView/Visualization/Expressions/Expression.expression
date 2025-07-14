@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionsSet id="Tanks_expressionsSet" xmlns="http://www.br-automation.com/iat2015/expression/engineering/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Expressions>
+		<Expression id="Zb3_lewy_przeplyw" xsi:type="content" contentRefId="MainPageContent" type="Zb12_przeplyw" />
+		<Expression id="Zb3_prawy_przeplyw" xsi:type="content" contentRefId="MainPageContent" type="Zb12_przeplyw" />
+		<Expression id="Zb3_prawy_zawor" xsi:type="content" contentRefId="MainPageContent" type="Zb3_zawor" />
+		<Expression id="Zb3_lewy_zawor" xsi:type="content" contentRefId="MainPageContent" type="Zb3_zawor" />
+
+		<Expression id="Zb3_przeplyw" xsi:type="content" contentRefId="MainPageContent" type="Zb3_przep" />	
+		<Expression id="Zb1_zawor_Negative" xsi:type="content" contentRefId="MainPageContent" type="Negation" />
+		<Expression id="Zb2_zawor_Negative" xsi:type="content" contentRefId="MainPageContent" type="Negation" />
+		<Expression id="Zb3_zawor_Negative" xsi:type="content" contentRefId="MainPageContent" type="Negation" />			
+
+		<Expression id="Mixer_Visible" xsi:type="content" contentRefId="MainPageContent" type="Mixer_Blinking" />
+
+		<Expression id="Zb1_rising" xsi:type="content" contentRefId="MainPageContent" type="Zb12_rising" />
+		<Expression id="Zb2_rising" xsi:type="content" contentRefId="MainPageContent" type="Zb12_rising" />
+		<Expression id="Zb1_droping" xsi:type="content" contentRefId="MainPageContent" type="Zb12_droping_boolean" />
+		<Expression id="Zb2_droping" xsi:type="content" contentRefId="MainPageContent" type="Zb12_droping_boolean" />
+		<Expression id="Zb3_droping" xsi:type="content" contentRefId="MainPageContent" type="Zb3_Droping" />
+		
+		<Expression id="Zb1_change" xsi:type="content" contentRefId="MainPageContent" type="Zb12Change" />
+		<Expression id="Zb2_change" xsi:type="content" contentRefId="MainPageContent" type="Zb12Change" />
+		<Expression id="Zb3_change" xsi:type="content" contentRefId="MainPageContent" type="Zb3Change" />
+		<Expression id="Zb12_decrease" xsi:type="content" contentRefId="MainPageContent" type="Zb12Decrease" />
+				
+	</Expressions>
+</ExpressionsSet>

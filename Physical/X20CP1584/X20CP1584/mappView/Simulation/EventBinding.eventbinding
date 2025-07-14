@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="eventbinding_1" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<!-- Valve 1 ProgressBar value change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb1_zawor" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb1_zawor">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="Zb1_zawor=TRUE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Top1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Top2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Inside">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetVisible" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="Zb1_zawor=FALSE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Top1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Top2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank1Inside">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetVisible" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding> 
+
+		<!-- Valve 2 ProgressBar Value Change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb2_zawor" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb2_zawor">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="Zb2_zawor=TRUE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Top1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Top2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Inside">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetVisible" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="Zb2_zawor=FALSE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Top1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Top2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank2Inside">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetVisible" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb3 Prawy Progress Bar Value change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_prawy_przeplyw_expression_result" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right3">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right4">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right3">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank2Right4">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb3 Lewy Progress Bar Value change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_lewy_przeplyw_expression_result" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left3">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left4">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left3">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="PrgBarTank1Left4">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb3 glowny Progress Bar Value change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_przeplyw_expression_result" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank3Sink1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank3Sink2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="1" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank3Sink1">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.ProgressBar.Action" contentRefId="MainPageContent" widgetRefId="ProgressBarTank3Sink2">
+							<Method xsi:type="widgets.brease.ProgressBar.Action.SetValue" value="0" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb1 Water Level Increase -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb1_zawor" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_increase">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_increase">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb1 Water Level Decrease -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb3_zawor_lewy" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_lewy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb1_poziom" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb1_poziom">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb3_poziom" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_poziom">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="BooleanValves" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zawory_dwustanowe">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue=TRUE AND Zb1_poziom &gt; 0 AND BooleanValves=TRUE AND Zb3_zawor_lewy &gt; 0 AND Zb3_poziom &lt; 10000" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb1_poziom &gt; 0 AND BooleanValves=TRUE AND (Zb3_zawor_lewy &lt;= 0 OR Zb3_poziom &gt; 10000)" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb1_poziom &gt; 0 AND BooleanValves=FALSE AND Zb3_zawor_lewy &gt; 0 AND Zb3_poziom &lt; 10000" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="=Zb3_zawor_lewy" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb1_poziom &gt; 0 AND BooleanValves=FALSE AND (Zb3_zawor_lewy &lt;= 0 OR Zb3_poziom &gt; 10000)" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb1_poziom &lt;= 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<!-- Zb1 Water Level Change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb1Change" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb1_change">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_poziom">
+						<Method xsi:type="session.VariableAction.AddValue" value="=Zb1Change" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb2 Water Level Increase -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb2_zawor" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_increase">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_increase">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb2 Water Level Decrease -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb3_zawor_prawy" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_prawy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb2_poziom" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb2_poziom">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb3_poziom" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_poziom">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="BooleanValves" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zawory_dwustanowe">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue=TRUE AND Zb2_poziom &gt; 0 AND BooleanValves=TRUE AND Zb3_zawor_prawy &gt; 0 AND Zb3_poziom &lt; 10000 " >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb2_poziom &gt; 0 AND BooleanValves=TRUE AND (Zb3_zawor_prawy &lt;= 0 OR Zb3_poziom &gt; 10000)" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb2_poziom &gt; 0 AND BooleanValves=FALSE AND Zb3_zawor_prawy &gt; 0 AND Zb3_poziom &lt; 10000" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="=Zb3_zawor_prawy" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb2_poziom &gt; 0 AND BooleanValves=FALSE AND (Zb3_zawor_prawy &lt;= 0 OR Zb3_poziom &gt; 10000)" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=TRUE AND Zb2_poziom &lt;= 0 ">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb2 Water Level Change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb2Change" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb2_change">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_poziom">
+						<Method xsi:type="session.VariableAction.AddValue" value="=Zb2Change" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<!-- Zb3 main Valve -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_zawor" event="ValueChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_decrease">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Zb3 Water Level Change -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="ClockSignal" event="ValueChanged" />
+			<Operand name="Zb3Change" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_change">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="BooleanValves" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zawory_dwustanowe">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb3_lewy" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_lewy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb3_prawy" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_prawy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb3Poziom" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_poziom">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue=TRUE AND Zb3Poziom &lt;= 10000">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_poziom">
+						<Method xsi:type="session.VariableAction.AddValue" value="=Zb3Change" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Checking if Water Level 0<=Zb1_poziom<=10000 -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb1_poziom" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 10000">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb1_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="10000" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Checking if Water Level 0<=Zb2_poziom<=10000 -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb2_poziom" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 10000">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb2_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="10000" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Checking if Water Level 0<=Zb3_poziom<=10000 -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_poziom" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 10000">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_poziom">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="10000" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Checking if Left Valve 0<=Zb3_zawor_lewy<=100 -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_zawor_lewy" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_lewy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 100">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_lewy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Checking if Right Valve 0<=Zb3_zawor_prawy<=100 -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_zawor_prawy" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_prawy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 100">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_prawy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Changing values in LeftValveNumericOutput widget -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_zawor_lewy" event="ValueChanged" />
+			<Operand name="BooleanValves" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zawory_dwustanowe">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb1Valve" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_lewy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue &gt; 0 AND BooleanValves=TRUE">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="LeftValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 0 AND BooleanValves=FALSE">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="LeftValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="=Zb1Valve" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=0">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="LeftValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="=0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+
+		<!-- Changing values in RightValveNumericOutput widget -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zb3_zawor_prawy" event="ValueChanged" />
+			<Operand name="BooleanValves" datatype="BOOL">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zawory_dwustanowe">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<Operand name="Zb2Valve" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="Zb3_zawor_prawy">
+					<Method xsi:type="session.VariableAction.GetValue"/>
+				</ReadTarget>	
+			</Operand>
+			<EventHandler condition="newValue &gt; 0 AND BooleanValves=TRUE">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="RightValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="100" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue &gt; 0 AND BooleanValves=FALSE">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="RightValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="=Zb2Valve" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=0">
+				<Action>
+					<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="MainPageContent" widgetRefId="RightValveNumericOutput">
+						<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="=0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+
+		<!-- Changing values to 0 to make sure that all graphical events are reset -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zawory_dwustanowe" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_lewy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="Zawory_dwustanowe" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="Zb3_zawor_prawy">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+	</Bindings>
+</EventBindingSet>
