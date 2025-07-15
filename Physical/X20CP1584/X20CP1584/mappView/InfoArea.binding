@@ -16,5 +16,41 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_poziom" attribute="value" />
 <Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="Zbiornik_1" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="Ellipse7" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="NumericOutputZ3" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="NumericOutputZ2" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="NumericOutputZ1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="Ellipse8" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_glowny" attribute="value" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="Ellipse11" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMieszadlo" attribute="value" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="Ellipse12" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="node" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="ProgressBarZP" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_lewy" attribute="node" />
+<Target xsi:type="brease" contentRefId="InfoArea" widgetRefId="ProgressBarZL" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

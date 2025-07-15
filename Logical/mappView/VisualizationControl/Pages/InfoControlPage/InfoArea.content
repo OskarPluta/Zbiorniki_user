@@ -1,11 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="InfoArea" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="20" left="160" width="660" height="260" zIndex="0" text="Poziomy Zbiorników">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxLevel" top="439" left="-1" width="1130" height="260" zIndex="0" text="Poziomy Zbiorników">
       <Widgets>
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_1" top="3" left="-1" width="221" height="221" zIndex="0" maxValue="10000" text="Zbiornik 1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_2" top="3" left="219" width="221" height="221" zIndex="1" maxValue="10000" text="Zbiornik 2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_3" top="3" left="439" width="217" height="217" zIndex="2" maxValue="10000" showUnit="true" text="Zbiornik 3" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_1" top="0" left="176" width="221" height="221" zIndex="0" maxValue="10000" text="Zbiornik 1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_2" top="0" left="542" width="221" height="221" zIndex="1" maxValue="10000" text="Zbiornik 2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_3" top="0" left="908" width="221" height="221" zIndex="2" maxValue="10000" showUnit="true" text="Zbiornik 3" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ1" top="24" left="49" zIndex="3" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ2" top="24" left="427" zIndex="4" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputZ3" top="24" left="806" zIndex="5" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxState" top="2" left="1" width="1128" height="435" zIndex="1" text="Stan Maszyny">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="61" left="73" width="140" zIndex="0" text="Zawór zbiornika 1" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="109" left="73" width="147" zIndex="1" text="Zawór zbiornika 2" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="155" left="73" width="193" zIndex="2" text="Prawy zawór zbiornika 3" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="199" left="73" width="188" zIndex="3" text="Lewy zawór zbiornika 3" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="244" left="73" width="200" zIndex="4" text="Główny zawór wylewowy" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="284" left="73" width="200" zIndex="5" text="Mieszadło" bold="true" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse1" top="54" left="280" width="43" height="35" zIndex="6" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse2" top="100" left="280" width="44" height="35" zIndex="7" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse5" top="236" left="280" width="44" height="35" zIndex="8" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse6" top="282" left="280" width="43" height="35" zIndex="9" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse7" top="54" left="280" width="43" height="35" zIndex="10" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse8" top="100" left="280" width="44" height="35" zIndex="11" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse11" top="236" left="280" width="44" height="35" zIndex="12" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse12" top="282" left="280" width="43" height="35" zIndex="13" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZP" top="156" left="280" width="117" height="15" zIndex="14" />
+        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZL" top="202" left="280" width="116" height="15" zIndex="15" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="333" left="71" width="200" zIndex="16" text="Mieszadło" bold="true" />
       </Widgets>
     </Widget>
   </Widgets>

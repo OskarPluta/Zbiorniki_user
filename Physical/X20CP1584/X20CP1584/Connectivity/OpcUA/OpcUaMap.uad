@@ -38,11 +38,6 @@
         <Variable Name="Mixer" />
       </Task>
       <Task Name="Tanks" />
-      <Task Name="Recipies">
-        <Variable Name="Mieszanie" />
-        <Variable Name="zawor3_lewy_otwarcie" />
-        <Variable Name="zawor3_prawy_otwarcie" />
-      </Task>
       <Task Name="ControlTan">
         <Variable Name="Mieszanie" />
         <Variable Name="zawor3_lewy_otwarcie" />

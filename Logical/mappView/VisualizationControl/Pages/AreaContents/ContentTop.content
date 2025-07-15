@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentTop" height="100" width="1280" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Image" id="LoginImage" top="20" left="900" width="60" height="40" zIndex="0" image="Media/SymbolLib/User/Login.svg" useSVGStyling="false" backColor="rgba(255, 255, 255, 1)" />
-    <Widget xsi:type="widgets.brease.Image" id="LogoutImage" top="20" left="1200" width="60" height="40" zIndex="1" image="Media/SymbolLib/User/Logout.svg" />
-    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="20" left="600" zIndex="2" />
-    <Widget xsi:type="widgets.brease.Label" id="HeyLabel" top="20" left="520" zIndex="3" text="Hey!" />
-    <Widget xsi:type="widgets.brease.Label" id="LoginLabel" top="20" left="800" zIndex="4" text="Login" />
-    <Widget xsi:type="widgets.brease.Label" id="LogoutLabel" top="20" left="1100" zIndex="5" text="Logout" />
+    <Widget xsi:type="widgets.brease.Image" id="LoginImage" top="-1" left="828" width="186" height="98" zIndex="0" image="Media/SymbolLib/User/Login.svg" useSVGStyling="false" backColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="LogoutImage" top="0" left="1099" width="184" height="98" zIndex="1" image="Media/SymbolLib/User/Logout.svg" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="48" left="6" zIndex="2" />
+    <Widget xsi:type="widgets.brease.Label" id="HeyLabel" top="5" left="11" zIndex="3" text="Hey!" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="LoginLabel" top="32" left="939" zIndex="4" text="Login" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoutLabel" top="25" left="1203" width="71" height="41" zIndex="5" text="Logout" />
   </Widgets>
 </Content>

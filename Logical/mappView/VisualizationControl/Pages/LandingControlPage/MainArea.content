@@ -1,38 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="MainArea" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Controls" top="201" left="11" width="378" height="310" zIndex="0" text="Controls" permissionView="['Administrators', 'Operator']">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Controls" top="38" left="6" width="378" height="310" zIndex="0" text="Controls" permissionView="['Administrators', 'Operator']">
       <Widgets>
-        <Widget xsi:type="widgets.brease.ToggleButton" id="StartButton" top="23" left="39" zIndex="0" text="START" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="MieszanieButton" top="83" left="39" zIndex="1" text="Mieszanie" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="StopButton" top="212" left="220" zIndex="2" text="STOP" checkedBackGroundGradient="linear-gradient(to bottom, #FF0000 0%, #8B0000 100%)" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="PauseButton" top="23" left="219" zIndex="3" text="PAUZA" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton" top="128" left="245" zIndex="4" text="MANUAL" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="StartButton" top="12" left="6" zIndex="0" text="START" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="MieszanieButton" top="11" left="137" width="116" height="32" zIndex="1" text="MIESZANIE" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="StopButton" top="220" left="6" zIndex="2" text="STOP" checkedBackGroundGradient="linear-gradient(to bottom, #FF0000 0%, #8B0000 100%)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="PauseButton" top="116" left="6" zIndex="3" text="PAUZA" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton" top="168" left="234" zIndex="4" text="MANUAL" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Line" id="Line89" zIndex="1" x1="-225" x2="-165" y1="-609" y2="-531" lineColor="rgba(0, 255, 0, 1)" lineWidth="3px" visible="false" />
     <Widget xsi:type="widgets.brease.Line" id="Line90" zIndex="2" x1="-165" x2="-225" y1="-609" y2="-531" lineColor="rgba(0, 255, 0, 1)" lineWidth="3px" visible="false" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="Controls1" top="80" left="457" width="655" height="525" zIndex="3" text="Manual Controls" permissionView="['Administrators', 'Operator']">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Controls1" top="5" left="401" width="655" height="525" zIndex="3" text="Manual Controls" permissionView="['Administrators', 'Operator']">
       <Widgets>
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton1" top="16" left="104" zIndex="0" text="Zawór 1" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton2" top="16" left="412" zIndex="1" text="Zawór 2" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton3" top="397" left="256" zIndex="2" text="Zawór 3" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButtonM" top="236" left="253" zIndex="3" text="Mieszadło" />
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_1" top="109" left="115" width="81" height="81" zIndex="4" maxValue="10000" text="Zbiornik 1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_2" top="111" left="425" width="79" height="79" zIndex="5" maxValue="10000" text="Zbiornik 2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
-        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_3" top="313" left="265" width="80" height="80" zIndex="6" maxValue="10000" showUnit="true" text="Zbiornik 3" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageMix" top="273" left="287" width="39" height="38" zIndex="7" image="Media/custom/mix.svg" borderStyle="hidden" borderWidth="0px" borderColor="rgba(51, 51, 51, 0)" imageColor="rgba(255, 255, 255, 0)" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageZ1" top="57" left="143" width="36" height="38" zIndex="8" image="Media/custom/pour.svg" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageZ2" top="67" left="446" width="36" height="38" zIndex="9" image="Media/custom/pour.svg" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageZL" top="272" left="135" width="36" height="38" zIndex="10" image="Media/custom/pour.svg" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageZP" top="269" left="451" width="36" height="38" zIndex="11" image="Media/custom/pour.svg" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageZ3" top="437" left="289" width="36" height="38" zIndex="12" image="Media/custom/pour.svg" />
-        <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSliderZL" top="190" left="104" width="76" height="28" zIndex="13" />
-        <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSliderZP" top="194" left="413" width="77" height="28" zIndex="14" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputZP" top="235" left="434" width="70" height="26" zIndex="15" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputZL" top="235" left="115" width="69" height="26" zIndex="16" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelZP" top="206" left="508" width="105" height="27" zIndex="17" text="Zawór Prawy" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelZL" top="199" left="14" width="105" height="27" zIndex="18" text="Zawór Lewy" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton1" top="5" left="115" height="31" zIndex="0" text="Zawór 1" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton2" top="6" left="415" zIndex="1" text="Zawór 2" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButton3" top="395" left="275" zIndex="2" text="Zawór 3" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ManualButtonM" top="214" left="271" zIndex="3" text="Mieszadło" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_1" top="90" left="121" width="81" height="81" zIndex="4" maxValue="10000" text="Zbiornik 1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_2" top="94" left="429" width="79" height="79" zIndex="5" maxValue="10000" text="Zbiornik 2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="Zbiornik_3" top="310" left="286" width="80" height="80" zIndex="6" maxValue="10000" showUnit="true" text="Zbiornik 3" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'A76'}" textColor="rgba(255, 255, 255, 0)" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageMix" top="263" left="304" width="39" height="38" zIndex="7" image="Media/custom/mix.svg" borderStyle="hidden" borderWidth="0px" borderColor="rgba(51, 51, 51, 0)" imageColor="rgba(255, 255, 255, 0)" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageZ1" top="44" left="147" width="36" height="38" zIndex="8" image="Media/custom/pour.svg" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageZ2" top="49" left="450" width="36" height="38" zIndex="9" image="Media/custom/pour.svg" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageZL" top="269" left="144" width="36" height="38" zIndex="10" image="Media/custom/pour.svg" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageZP" top="266" left="451" width="36" height="38" zIndex="11" image="Media/custom/pour.svg" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageZ3" top="437" left="308" width="36" height="38" zIndex="12" image="Media/custom/pour.svg" />
+        <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSliderZL" top="180" left="114" width="76" height="27" zIndex="13" />
+        <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSliderZP" top="186" left="411" width="77" height="28" zIndex="14" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputZP" top="234" left="434" width="70" height="26" zIndex="15" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelZP" top="201" left="500" width="105" height="27" zIndex="16" text="Zawór Prawy" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelZL" top="199" left="14" width="105" height="27" zIndex="17" text="Zawór Lewy" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputZL" top="235" left="127" width="69" height="26" zIndex="18" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageControler" top="2" left="289" width="74" height="79" zIndex="19" image="Media/custom/controler.svg" borderWidth="0px" borderColor="rgba(51, 51, 51, 0)" imageColor="rgba(255, 128, 128, 1)" />
       </Widgets>
     </Widget>
   </Widgets>

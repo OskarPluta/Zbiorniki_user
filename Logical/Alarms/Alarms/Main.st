@@ -18,7 +18,7 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(MpLinkTankAlarmXCore, 'TankLevelCritical');
 	END_IF
 
-	IF gZb1_poziom < ALARM_TANK_LOW OR gZb2_poziom > ALARM_TANK_LOW THEN
+	IF gZb1_poziom < ALARM_TANK_LOW OR gZb2_poziom < ALARM_TANK_LOW THEN
 		MpAlarmXSet(MpLinkTankAlarmXCore, 'TankLevelLow');
 	ELSE
 		MpAlarmXReset(MpLinkTankAlarmXCore, 'TankLevelLow');
