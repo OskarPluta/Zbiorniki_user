@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AlarmArea" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="AckButton" top="600" left="660" width="160" zIndex="0" text="Acknowlege" />
-    <Widget xsi:type="widgets.brease.Button" id="AckAllButton" top="600" left="840" width="160" zIndex="1" text="Acknowlege all" />
+    <Widget xsi:type="widgets.brease.Button" id="AckButton" top="600" left="660" width="160" zIndex="0" text="Potwierdź" />
+    <Widget xsi:type="widgets.brease.Button" id="AckAllButton" top="600" left="840" width="181" zIndex="1" text="Potwierdź wszystko" />
     <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList2" top="40" left="100" width="920" height="540" zIndex="2">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" width="220" zIndex="0" columnType="timestamp" text="Timestamp" />

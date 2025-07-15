@@ -13,23 +13,25 @@
     </Widget>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxState" top="2" left="1" width="1128" height="435" zIndex="1" text="Stan Maszyny">
       <Widgets>
-        <Widget xsi:type="widgets.brease.Label" id="Label1" top="61" left="73" width="140" zIndex="0" text="Zawór zbiornika 1" bold="true" />
-        <Widget xsi:type="widgets.brease.Label" id="Label2" top="109" left="73" width="147" zIndex="1" text="Zawór zbiornika 2" bold="true" />
-        <Widget xsi:type="widgets.brease.Label" id="Label3" top="155" left="73" width="193" zIndex="2" text="Prawy zawór zbiornika 3" bold="true" />
-        <Widget xsi:type="widgets.brease.Label" id="Label4" top="199" left="73" width="188" zIndex="3" text="Lewy zawór zbiornika 3" bold="true" />
-        <Widget xsi:type="widgets.brease.Label" id="Label5" top="244" left="73" width="200" zIndex="4" text="Główny zawór wylewowy" bold="true" />
-        <Widget xsi:type="widgets.brease.Label" id="Label6" top="284" left="73" width="200" zIndex="5" text="Mieszadło" bold="true" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse1" top="54" left="280" width="43" height="35" zIndex="6" backColor="rgba(255, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse2" top="100" left="280" width="44" height="35" zIndex="7" backColor="rgba(255, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse5" top="236" left="280" width="44" height="35" zIndex="8" backColor="rgba(255, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse6" top="282" left="280" width="43" height="35" zIndex="9" backColor="rgba(255, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse7" top="54" left="280" width="43" height="35" zIndex="10" backColor="rgba(0, 255, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse8" top="100" left="280" width="44" height="35" zIndex="11" backColor="rgba(0, 255, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse11" top="236" left="280" width="44" height="35" zIndex="12" backColor="rgba(0, 255, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse12" top="282" left="280" width="43" height="35" zIndex="13" backColor="rgba(0, 255, 0, 1)" />
-        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZP" top="156" left="280" width="117" height="15" zIndex="14" />
-        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZL" top="202" left="280" width="116" height="15" zIndex="15" />
-        <Widget xsi:type="widgets.brease.Label" id="Label7" top="333" left="71" width="200" zIndex="16" text="Mieszadło" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="61" left="73" width="140" zIndex="1" text="Zawór zbiornika 1" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="106" left="73" width="147" zIndex="2" text="Zawór zbiornika 2" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="150" left="73" width="193" zIndex="3" text="Prawy zawór zbiornika 3" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="195" left="73" width="188" zIndex="4" text="Lewy zawór zbiornika 3" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="239" left="73" width="200" zIndex="5" text="Główny zawór wylewowy" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="284" left="73" width="200" zIndex="6" text="Mieszadło" bold="true" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse1" top="54" left="280" width="43" height="35" zIndex="7" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse2" top="100" left="280" width="44" height="35" zIndex="8" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse5" top="236" left="280" width="44" height="35" zIndex="9" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse6" top="282" left="280" width="43" height="35" zIndex="10" backColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse7" top="54" left="280" width="43" height="35" zIndex="11" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse8" top="100" left="280" width="44" height="35" zIndex="12" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse11" top="236" left="280" width="44" height="35" zIndex="13" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse12" top="282" left="280" width="43" height="35" zIndex="14" backColor="rgba(0, 255, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZP" top="156" left="280" width="117" height="15" zIndex="15" />
+        <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZL" top="202" left="280" width="116" height="15" zIndex="16" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="331" left="71" width="127" zIndex="17" text="Tryb pracy" bold="true" />
+        <Widget xsi:type="widgets.brease.Image" id="Image1" top="328" left="281" width="40" height="41" zIndex="18" image="Media/custom/controler.svg" backColor="rgba(169, 169, 169, 1)" />
+        <Widget xsi:type="widgets.brease.Image" id="Image2" top="328" left="281" width="40" height="41" zIndex="0" image="Media/custom/auto.svg" backColor="rgba(169, 169, 169, 1)" />
       </Widgets>
     </Widget>
   </Widgets>

@@ -33,6 +33,8 @@
   <StartTheme themeRefId="BuRTheme1" />
   <Themes>
     <Theme refId="BuRTheme1" />
+    <Theme refId="BuRThemeFlat2" />
+    <Theme refId="BuRThemeFlat1" />
   </Themes>
   <Configurations>
     <Configuration key="activityCount" value="false" />

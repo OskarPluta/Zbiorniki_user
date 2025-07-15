@@ -114,5 +114,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZP" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NOT_STOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="StartButton" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NOT_STOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="MieszanieButton" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>
