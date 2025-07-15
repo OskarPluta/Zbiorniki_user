@@ -4,14 +4,19 @@
   <Pages>
     <Page refId="LandingControlPage" />
     <Page refId="InfoControlPage" />
+    <Page refId="AlarmControlPage" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="InfoArea_binding" />
+    <BindingsSet refId="MainArea_binding" />
+    <BindingsSet refId="AlarmArea_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="LoginArea_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="MainArea_eventbinding" />
+    <EventBindingsSet refId="AlarmArea_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
@@ -20,6 +25,7 @@
     <Content refId="LoginArea" />
     <Content refId="MainArea" />
     <Content refId="InfoArea" />
+    <Content refId="AlarmArea" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

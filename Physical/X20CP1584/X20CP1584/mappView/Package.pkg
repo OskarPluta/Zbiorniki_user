@@ -9,5 +9,9 @@
     <Object Type="File">ContentTop.eventbinding</Object>
     <Object Type="File">LoginArea.eventbinding</Object>
     <Object Type="File">InfoArea.binding</Object>
+    <Object Type="File">MainArea.eventbinding</Object>
+    <Object Type="File">MainArea.binding</Object>
+    <Object Type="File">AlarmArea.eventbinding</Object>
+    <Object Type="File">AlarmArea.binding</Object>
   </Objects>
 </Package>

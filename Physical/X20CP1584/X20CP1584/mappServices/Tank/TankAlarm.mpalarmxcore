@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="MpLinkTankAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="TankLevelHigh" />
+        <Property ID="Message" Value="Tank level is high!" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="PressureLevelHigh" />
+        <Property ID="Message" Value="Pressure level is high!" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="PresureLevelCritical" />
+        <Property ID="Message" Value="The pressure level is critical! Turning on the vales!" />
+        <Property ID="Severity" Value="5" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

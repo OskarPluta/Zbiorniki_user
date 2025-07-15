@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainArea_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:START" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="StartButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:STOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="StopButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:PAUSE" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="PauseButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MIESZANIE" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="MieszanieButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NOT_STOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="PauseButton" attribute="enable" />
+</Binding>
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NOT_STOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="StartButton" attribute="enable" />
+</Binding>
+
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageZP" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_lewy" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageZL" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageZ2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageZ1" attribute="visible" />
+</Binding>
+		<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMieszadlo" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageMix" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_glowny" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ImageZ3" attribute="visible" />
+</Binding>
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MANUAL" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_lewy" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonL" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonP" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMieszadlo" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonM" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_glowny" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton3" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MANUAL" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="Controls1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZL" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZL" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZP" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

@@ -9,9 +9,10 @@ VAR
 	gZb3_zawor_prawy : INT; (*% otwarcia zaworu prawego (0-100)*)
 	gZb3_zawor_glowny : BOOL; (*0 - zawor zamkniety, 1 - zawor otwarty*)
 	gMieszadlo : BOOL; (*0 - mieszadlo wylaczone, 1- mieszadlo wlaczone*)
-	
 	START : BOOL;
 	STOP : BOOL;
-	PAUSE: BOOL;
+	PAUSE : BOOL;
+	MIESZANIE : BOOL;
+	NOT_STOP : BOOL;
+	MANUAL : BOOL;
 END_VAR
-	

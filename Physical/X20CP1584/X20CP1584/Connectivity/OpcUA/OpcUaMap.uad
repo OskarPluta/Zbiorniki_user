@@ -28,13 +28,21 @@
         <Variable Name="gZb3_zawor_prawy" EURangesId="1" />
         <Variable Name="START" />
         <Variable Name="STOP" />
+        <Variable Name="PAUSE" />
+        <Variable Name="MIESZANIE" />
+        <Variable Name="NOT_STOP" />
+        <Variable Name="MANUAL" />
       </GlobalVariables>
       <Task Name="ClockSigna">
         <Variable Name="Clock" />
         <Variable Name="Mixer" />
       </Task>
       <Task Name="Tanks" />
-      <Task Name="Recipies" />
+      <Task Name="Recipies">
+        <Variable Name="Mieszanie" />
+        <Variable Name="zawor3_lewy_otwarcie" />
+        <Variable Name="zawor3_prawy_otwarcie" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

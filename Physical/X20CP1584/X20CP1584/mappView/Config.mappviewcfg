@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
     <Group ID="Server">
@@ -7,13 +8,16 @@
       </Selector>
       <Property ID="MaxClientConnections" Value="10" />
       <Property ID="MaxBRClientConnections" Value="10" />
-      <Selector ID="ClientConnectionsLicensingMode" Value="LicensingModeConfiguredMaxClients" />
+      <Selector ID="AuthenticationMode" Value="AuthenticationModeRbac" />
       <Group ID="TcpProxyConf">
         <Selector ID="InsecureMode" Value="1" />
       </Group>
       <Group ID="DiagnosticPageConf">
-        <Selector ID="DiagnosticPageSelection" Value="1" />
+        <Selector ID="DiagnosticPageSelection" Value="2">
+          <Property ID="DiagnosticPageRole[1]" Value="Operator" />
+        </Selector>
       </Group>
+      <Selector ID="Deployment" Value="DeploymentPLC" />
     </Group>
     <Group ID="OpcUa">
       <Property ID="ServerConnectionTimeout" Value="5000" />
@@ -37,6 +41,10 @@
         <Property ID="preserveOldValues" Value="TRUE" />
       </Group>
       <Property ID="defaultVisu" Value="Zbiorniki" />
+      <Group ID="Widget">
+        <Selector ID="renderingPolicy" Value="1" />
+        <Selector ID="securityPolicy" Value="1" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

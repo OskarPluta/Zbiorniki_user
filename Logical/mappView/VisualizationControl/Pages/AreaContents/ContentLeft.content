@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentLeft" height="700" width="150" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" height="300" zIndex="0" childPositioning="relative">
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" height="300" zIndex="0" childPositioning="relative" permissionOperate="['Administrators', 'Operator']">
       <Widgets>
         <Widget xsi:type="widgets.brease.NavigationButton" id="MainPageNavigation" top="0" left="0" width="140" height="60" zIndex="0" pageId="LandingControlPage" text="Main" fontSize="14px" margin="5px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="InfoPageNavigation" top="0" left="0" width="140" height="60" zIndex="1" pageId="InfoControlPage" text="Info" fontSize="14px" italic="false" margin="5px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="AlarmPageNavigation" top="0" left="0" width="140" height="60" zIndex="2" pageId="AlarmControlPage" text="Alarms" fontSize="14px" italic="false" margin="5px" />
       </Widgets>
     </Widget>
   </Widgets>

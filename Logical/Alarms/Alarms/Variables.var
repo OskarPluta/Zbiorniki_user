@@ -1,0 +1,4 @@
+VAR
+	MpAlarmXCore_0 : MpAlarmXCore;
+	ALARM_TANK_HIGH : INT := 9000;
+END_VAR

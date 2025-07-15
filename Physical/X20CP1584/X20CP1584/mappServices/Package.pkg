@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.3.8.58 SP?>
-<Package PackageType="mappServices" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappServices" PackageType="mappServices" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">Tank</Object>
+  </Objects>
 </Package>
