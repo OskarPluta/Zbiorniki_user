@@ -4,6 +4,6 @@
   <Objects>
     <Object Type="File">mappingVariables.var</Object>
     <Object Type="Program" Language="IEC">Tanks</Object>
-    <Object Type="Program" Language="IEC">Recipies</Object>
+    <Object Type="Program" Language="IEC">ControlTanks</Object>
   </Objects>
 </Package>

@@ -14,9 +14,14 @@
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[2]">
-        <Property ID="Name" Value="PresureLevelCritical" />
-        <Property ID="Message" Value="The pressure level is critical! Turning on the vales!" />
+        <Property ID="Name" Value="TankLevelCritical" />
+        <Property ID="Message" Value="The tank level is CRITICAL!" />
         <Property ID="Severity" Value="5" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="TankLevelLow" />
+        <Property ID="Message" Value="Then tank level is too low!" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
     </Group>

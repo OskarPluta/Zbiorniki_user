@@ -8,7 +8,7 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="Tanks" Source="Sterowanie.Tanks.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Recipies" Source="Sterowanie.Recipies.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ControlTan" Source="Sterowanie.ControlTanks.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Visibility" Source="HelpingFunctions.Visibility.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />

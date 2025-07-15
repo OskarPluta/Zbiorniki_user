@@ -24,10 +24,7 @@
 
 
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:NOT_STOP" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="StartButton" attribute="enable" />
-</Binding>
+
 
 
 
@@ -69,18 +66,10 @@
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton1" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_lewy" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonL" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButton2" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonP" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
+		<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gMieszadlo" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="ManualButtonM" attribute="value" />
 </Binding>
@@ -92,12 +81,31 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MANUAL" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="Controls1" attribute="visible" />
 </Binding>
+
+
+
+
+
+
+
+
+
+
+
 <Binding mode="twoWay">
-<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZL" attribute="value" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_prawy" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZL" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZP" attribute="value" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_lewy" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZP" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZL" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZL" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="MainArea" widgetRefId="BasicSliderZP" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainArea" widgetRefId="NumericInputZP" attribute="value" />
 </Binding>
 </Bindings>
