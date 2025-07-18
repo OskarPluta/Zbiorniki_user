@@ -6,7 +6,7 @@ ACTION KrokStop:
 		IF ABS(gZb1_poziom - gZb2_poziom) > tolerancja_poziom THEN
 			krok := 5;
 		ELSE
-			IF gZb1_poziom >= 8000 AND gZb2_poziom >= 8000 THEN
+			IF gZb1_poziom >= poziom_80_procent AND gZb2_poziom >= poziom_80_procent THEN
 				krok := 2;
 			ELSE
 				krok := 1;

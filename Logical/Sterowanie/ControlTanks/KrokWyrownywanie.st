@@ -15,7 +15,7 @@ ACTION KrokWyrownywanie:
 			gZb1_zawor := 0;
 			gZb2_zawor := 0;
             
-			IF gZb1_poziom >= 8000 AND gZb2_poziom >= 8000 THEN
+			IF gZb1_poziom >= poziom_80_procent AND gZb2_poziom >= poziom_80_procent THEN
 				krok := 2;
 			ELSE
 				krok := 1;

@@ -24,4 +24,5 @@ VAR
 	timer_uruchomiony : BOOL := FALSE;
 	max_poziom : INT := 10000;
 	poziom_95_procent : INT := 9500;
+	poziom_80_procent : INT := 8000;
 END_VAR
